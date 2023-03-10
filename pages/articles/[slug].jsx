@@ -49,7 +49,6 @@ import Calendar from "../../images/icons/date.svg";
 const renderOptions = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
-		console.log("fields: "+JSON.stringify(node.data.target));
 		if(node.data.target.fields.file.contentType.includes("image"))
         	return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.description}/>;
 		else if(node.data.target.fields.file.contentType.includes("video"))
@@ -107,7 +106,7 @@ export default function Post({ articles }) {
 	} = articles.fields;
 
 	return (
-		<Layout>
+		<Layout pageImage={featuredImage.fields.file.url}>
 			{/* <Head>
 				<script
 					type="application/ld+json"
