@@ -1,0 +1,15 @@
+.careersWrapperMobile {
+	@apply bg-primary;
+	background-image: url("../../../../images/careers-featured-bg.svg");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.careersWrapperDesktop {
+	@apply bg-primary;
+	background-image: url("../../../../images/careers-featured-bg.svg");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: auto;
+}

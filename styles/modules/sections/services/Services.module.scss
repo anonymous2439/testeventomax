@@ -1,0 +1,40 @@
+.servicesBannerMobileWrapper {
+	@apply bg-darkGrey;
+	@apply text-white;
+	@apply text-center;
+	@apply py-20;
+	clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+
+	p {
+		@apply my-10;
+	}
+
+	img {
+		@apply mx-auto;
+	}
+}
+
+.servicesBannerDesktopWrapper {
+	@apply bg-darkGrey;
+	@apply text-white;
+	@apply py-20;
+	clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+	background-image: url("../../../../images/articles-featured-bg.svg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 500px;
+	background-position: 40% 100%;
+
+	section {
+		@apply grid grid-cols-2 gap-x-6 items-center;
+
+		p {
+			@apply my-10;
+			@apply text-left;
+		}
+
+		img {
+			@apply mx-auto;
+		}
+	}
+}

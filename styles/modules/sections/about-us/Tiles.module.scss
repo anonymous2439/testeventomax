@@ -1,0 +1,99 @@
+.tilesWrapperMobile {
+	@apply grid grid-cols-2 text-center;
+	background: rgba(89, 89, 89, 0.2);
+	grid-gap: 1px;
+	margin-bottom: 10px;
+	@apply border-t-4 border-primary;
+
+	.tiles {
+		@apply bg-white;
+		padding: 20px 0;
+		@apply relative;
+		@apply overflow-hidden;
+		@apply cursor-default;
+
+		&:hover {
+			@apply transform duration-300;
+
+			.tilesOverlay {
+				@apply bottom-0;
+			}
+		}
+
+		img {
+			@apply mx-auto;
+		}
+
+		h4 {
+			@apply text-grey3;
+			@apply font-semibold;
+		}
+
+		.tilesOverlay {
+			@apply bg-primary;
+			@apply text-grey3;
+			@apply font-semibold;
+			@apply absolute;
+			@apply w-full;
+			@apply h-full;
+			@apply flex items-center;
+			@apply px-4;
+			bottom: -100%;
+			@apply transform duration-200;
+
+			p {
+				@apply text-xs lg:text-base;
+			}
+		}
+	}
+}
+
+.tilesWrapperDesktop {
+	@apply grid grid-cols-4 text-center;
+	background: rgba(89, 89, 89, 0.2);
+	grid-gap: 1px;
+	margin-bottom: 2rem;
+	@apply border-t-4 border-primary;
+
+	.tiles {
+		@apply bg-white;
+		padding: 20px 0;
+		@apply relative;
+		@apply overflow-hidden;
+		@apply cursor-default;
+
+		&:hover {
+			@apply transform duration-300;
+
+			.tilesOverlay {
+				@apply bottom-0;
+			}
+		}
+
+		img {
+			@apply mx-auto;
+		}
+
+		h3 {
+			@apply text-grey3;
+			@apply font-semibold;
+		}
+
+		.tilesOverlay {
+			@apply bg-primary;
+			@apply text-grey3;
+			@apply font-semibold;
+			@apply absolute;
+			@apply w-full;
+			@apply h-full;
+			@apply flex items-center;
+			@apply px-4;
+			bottom: -100%;
+			@apply transform duration-200;
+
+			p {
+				@apply text-sm lg:text-base;
+			}
+		}
+	}
+}

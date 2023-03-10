@@ -1,0 +1,30 @@
+.quickContactWrapper {
+	@apply bg-white text-black px-6 py-10;
+	@apply shadow-primary shadow-lg;
+	position: relative;
+	z-index: 1;
+	margin-top: -15rem;
+
+	form {
+		@apply w-full;
+		@apply space-y-4;
+
+		label {
+			@apply font-semibold;
+			@apply w-full;
+			@apply block;
+		}
+
+		input {
+			outline: 1px solid rgba(0, 0, 0, 0.2);
+			padding: 5px;
+			@apply font-medium;
+			@apply block;
+			@apply w-full;
+
+			&:focus {
+				outline: 2px solid #ffdb19;
+			}
+		}
+	}
+}

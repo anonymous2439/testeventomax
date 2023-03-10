@@ -1,0 +1,51 @@
+.aboutHomeWrapperMobile {
+	@apply space-y-10;
+
+	.card {
+		@apply text-center;
+		@apply shadow-xl;
+		@apply py-10;
+		@apply hover:bg-primary;
+		@apply hover:text-grey3;
+		@apply cursor-default;
+
+		h1 {
+			@apply font-bold;
+		}
+
+		p {
+			@apply text-center;
+			@apply font-semibold;
+		}
+	}
+}
+
+.aboutHomeWrapperDesktopWrapper {
+	// background: url("../../../../images/about-home-banner.webp");
+	// background-size: 450px;
+	// background-repeat: no-repeat;
+	// background-position: right 11rem;
+
+	.aboutHomeWrapperDesktop {
+		@apply grid grid-cols-2 gap-10;
+
+		.card {
+			@apply text-center;
+			@apply shadow-xl;
+			@apply py-10;
+			@apply hover:bg-primary;
+			@apply hover:text-grey3;
+			@apply cursor-default;
+
+			h1 {
+				@apply font-bold;
+				font-size: 92px;
+			}
+
+			p {
+				@apply text-center;
+				@apply font-semibold;
+			}
+		}
+	}
+}

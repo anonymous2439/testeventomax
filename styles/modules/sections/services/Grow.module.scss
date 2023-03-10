@@ -1,0 +1,128 @@
+.growCardsMobile {
+	@apply flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	@apply gap-4;
+	@apply my-6;
+	max-width: 400px;
+	width: 100%;
+	@apply mx-auto;
+
+	.card {
+		@apply px-4 py-4;
+		@apply rounded-md;
+		@apply flex-1;
+		max-width: 200px;
+		@apply shadow-xl;
+
+		&:nth-of-type(1) {
+			@apply bg-quaternary;
+			@apply text-white;
+			@apply basis-0;
+		}
+
+		&:nth-of-type(2) {
+			@apply bg-primary;
+			@apply text-black;
+			@apply basis-0;
+		}
+
+		&:nth-of-type(3) {
+			@apply bg-grey4;
+			@apply text-black;
+			@apply basis-3/4;
+		}
+
+		h4 {
+			@apply font-semibold;
+			font-size: 16px;
+		}
+
+		p {
+			@apply font-light;
+		}
+	}
+}
+
+/* .growCardsDesktop {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px 30px;
+	grid-template-areas:
+		"div1 div2"
+		"div3 div2";
+}
+
+.div1 {
+	grid-area: div1;
+	@apply bg-quaternary;
+	@apply text-white;
+}
+.div2 {
+	grid-area: div2;
+	@apply bg-primary;
+	@apply text-black;
+}
+.div3 {
+	grid-area: div3;
+	@apply bg-grey4;
+	@apply text-black;
+} */
+
+.growCardsDesktop {
+	/* @apply flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	@apply gap-4;
+	@apply my-6;
+	max-width: 600px;
+	width: 100%;
+	@apply mx-auto;
+	@apply grid grid-cols-2 gap-6; */
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px 30px;
+	grid-template-areas:
+		"div1 div2"
+		"div3 div2";
+
+	.card {
+		@apply px-4 py-4;
+		@apply rounded-md;
+		@apply flex-1;
+		max-width: 400px;
+		@apply shadow-xl;
+
+		&:nth-of-type(1) {
+			grid-area: div1;
+			@apply bg-quaternary;
+			@apply text-white;
+		}
+
+		&:nth-of-type(2) {
+			grid-area: div2;
+			@apply bg-primary;
+			@apply text-black;
+			min-height: 177px;
+			margin: auto 0;
+		}
+
+		&:nth-of-type(3) {
+			grid-area: div3;
+			@apply bg-grey4;
+			@apply text-black;
+		}
+
+		h3 {
+			@apply font-semibold;
+		}
+
+		p {
+			@apply font-light;
+		}
+	}
+}

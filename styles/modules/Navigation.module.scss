@@ -1,0 +1,35 @@
+.navigationWrapper {
+	background: rgba(0, 0, 0, 0.694);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
+	.navigation {
+		@apply flex;
+		@apply justify-between;
+		@apply items-center;
+	}
+}
+
+.mobileNavFooter {
+	@apply absolute;
+	@apply bottom-0;
+	@apply w-full;
+
+	@media screen and (max-height: 700px) {
+		position: relative;
+		margin-top: 5rem;
+	}
+
+	img {
+		opacity: 0.6;
+	}
+
+	div {
+		@apply flex flex-row;
+		@apply justify-between;
+		@apply px-8;
+		@apply w-full;
+	}
+}

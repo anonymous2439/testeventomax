@@ -1,0 +1,13 @@
+.pricingBannerWrapper {
+	@apply bg-darkGrey;
+	@apply text-white;
+	@apply py-20;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+
+	p {
+		padding-top: 40px;
+		@apply text-center;
+		max-width: 750px;
+		margin: auto;
+	}
+}

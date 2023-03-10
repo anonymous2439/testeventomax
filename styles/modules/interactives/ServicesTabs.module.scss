@@ -1,0 +1,25 @@
+.tabContent {
+	@apply my-6;
+}
+
+.tabs {
+	@apply w-full;
+}
+
+.tabLinks {
+	@apply grid grid-cols-2 text-center;
+	@apply cursor-pointer;
+}
+
+
+.desktopServices {
+	@apply font-light;
+	@apply hover:bg-primary hover:font-semibold hover:px-6 hover:py-2 hover:shadow-lg;
+	// @apply click:bg-primary click:font-semibold click:px-6 clicked:py-2 click:shadow-lg;
+	@apply active:bg-primary active:font-semibold active:px-6 hover:py-2 active:shadow-lg;
+	@apply visited:bg-primary visited:font-semibold visited:px-6 visited:py-2 visited:shadow-lg;
+	@apply w-fit;
+	@apply px-6 py-2;
+	@apply cursor-pointer;
+	@apply transition duration-500 hover:scale-110 ease-in-out;
+}

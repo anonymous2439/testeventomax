@@ -1,0 +1,81 @@
+.bannerWrapperMobile {
+	background: url("../../images/banner-bg.jpg");
+	background-position: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.bannerWrapperInnerMobile {
+		padding: 5rem 0;
+		@apply relative;
+
+		section {
+			height: 100%;
+			@apply flex flex-col justify-center items-center;
+
+			@apply text-white;
+
+			p {
+				text-shadow: 1px 1px 5px black;
+				@apply font-medium;
+
+				&:nth-of-type(1) {
+					&::after {
+						content: "";
+						display: block;
+						width: 50px;
+						padding-top: 10px;
+						margin: auto;
+						@apply border-b-2;
+						@apply border-primary;
+					}
+				}
+			}
+
+			h1 {
+				@apply text-center;
+				@apply font-semibold;
+				line-height: 4rem;
+				text-shadow: 1px 1px 5px black;
+			}
+		}
+	}
+}
+
+.bannerWrapperDesktop {
+	background: url("../../images/banner-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@apply py-20;
+
+	section {
+		height: 100%;
+		@apply grid grid-cols-2 gap-x-6;
+		@apply text-white;
+
+		p {
+			text-shadow: 1px 1px 5px black;
+			&:nth-of-type(1) {
+				@apply flex;
+				@apply items-center;
+
+				&::before {
+					content: "";
+					display: inline-block;
+					height: 40px;
+					border: 3px solid #ffdb19;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.botField {
+			@apply hidden;
+		}
+
+		h1 {
+			@apply font-semibold;
+			line-height: 4rem;
+		}
+	}
+}

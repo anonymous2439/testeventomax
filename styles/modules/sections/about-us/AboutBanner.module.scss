@@ -1,0 +1,28 @@
+.aboutBannerWrapperMobile {
+	@apply bg-darkGrey;
+	@apply py-20;
+
+	.aboutBannerContentSectionMobile {
+		@apply text-center;
+		@apply text-white;
+		@apply space-y-10;
+
+		img {
+			@apply mx-auto;
+		}
+	}
+}
+
+.aboutBannerWrapperDesktop {
+	@apply bg-darkGrey;
+	@apply py-20;
+	background-image: url("../../../../images/about-banner-featured-bg.svg");
+	background-repeat: no-repeat;
+	background-position: 90% 110%;
+	background-size: auto;
+
+	.aboutBannerContentSectionDesktop {
+		@apply grid grid-cols-2 items-center gap-x-10;
+		@apply text-white;
+	}
+}

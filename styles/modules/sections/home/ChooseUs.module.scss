@@ -1,0 +1,40 @@
+.chooseUsBg {
+	/* background: url("../../../../images/icons/coffee.webp");
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: -1rem 1rem;
+	@apply pt-10; */
+	@apply relative;
+	@apply pt-10;
+	@apply space-y-6;
+
+	.chooseUsImg {
+		@apply absolute;
+		left: 0;
+		top: 25px;
+		width: 10rem;
+		left: -25px;
+		top: -40px;
+	}
+}
+
+.chooseUsWrapperDesktop {
+	@apply relative;
+	@apply space-y-10;
+	.desktopCoffee {
+		@apply absolute;
+		@apply top-0;
+		@apply left-0;
+	}
+
+	.desktopPlant {
+		@apply absolute;
+		@apply top-0;
+		@apply right-0;
+	}
+	.chooseUsTiles {
+		max-width: 1000px;
+		@apply mx-auto;
+		@apply grid grid-cols-3 gap-x-10;
+	}
+}

@@ -1,0 +1,23 @@
+.staffWrapper {
+	@apply py-10;
+
+	.ceoWrapper {
+		@apply flex items-end gap-x-6 mb-10;
+	}
+
+	.otherStaff {
+		@apply grid grid-cols-2 gap-4;
+	}
+}
+
+.leadershipWrapperDesktop {
+	@apply grid grid-cols-2 items-center gap-x-20;
+
+	.ceoWrapperDesktop {
+		@apply flex flex-wrap items-end gap-x-6;
+	}
+}
+
+.otherStaffDesktop {
+	@apply grid grid-cols-2 md:grid-cols-5 gap-10;
+}

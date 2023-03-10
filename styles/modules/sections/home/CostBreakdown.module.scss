@@ -1,0 +1,18 @@
+.costSwiperBg {
+	background: url("../../../../images/costbreakdown-bg.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: left center;
+
+	.costSwiperSlides {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+
+		img {
+			width: 75%;
+		}
+	}
+}

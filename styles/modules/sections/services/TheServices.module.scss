@@ -1,0 +1,7 @@
+.activeServes {
+	@apply text-center font-semibold cursor-pointer;
+
+	&:active {
+		@apply border-b-2 border-black;
+	}
+}

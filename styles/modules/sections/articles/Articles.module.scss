@@ -1,0 +1,54 @@
+.articlesOuterWrapper {
+	@apply bg-white;
+
+	.articlesInnerWrapper {
+		@apply bg-darkGrey;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+		@apply py-20 md:py-40;
+		background-image: url("../../../../images/articles-featured-bg.svg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: 500px;
+		background-position: 50% 125%;
+
+		@media screen and (max-width: 775px) {
+			background-size: 350px;
+			background-position: 50% 115%;
+		}
+	}
+}
+
+.feed {
+	@apply grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6;
+	@apply mt-10;
+
+	.post {
+		@apply shadow-xl;
+		@apply rounded-lg;
+		@apply transition;
+		@apply ease-in-out;
+		@apply delay-150;
+		@apply hover:-translate-y-1;
+		@apply hover:scale-105;
+		@apply duration-300;
+		@apply relative;
+
+		img {
+			@apply rounded-t-xl;
+		}
+
+		.cardDetail {
+			@apply relative;
+			height: 100px;
+
+			.innerDetail {
+				@apply absolute;
+				@apply w-full;
+				bottom: 10px;
+				.innerDeets {
+					@apply flex justify-between;
+				}
+			}
+		}
+	}
+}

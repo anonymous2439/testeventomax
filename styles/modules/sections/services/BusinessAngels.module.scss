@@ -1,0 +1,10 @@
+.businessAngelsWrapper {
+	background-image: url("../../../../images/business-angels-featured-bg.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	img {
+		@apply mx-auto;
+	}
+}

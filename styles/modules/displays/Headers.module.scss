@@ -1,0 +1,54 @@
+.headers {
+	@apply flex;
+	@apply items-center;
+	@apply font-bold;
+	@apply border-primary;
+	@apply border-l-4;
+	@apply pl-4;
+
+	/* &::before {
+		content: "";
+		display: inline-block;
+		height: 40px;
+		border: 3px solid #ffdb19;
+		margin-right: 10px;
+	} */
+}
+
+.centeredHeader {
+	@apply text-center;
+	@apply font-bold;
+	@apply relative;
+	@apply w-fit;
+	@apply mx-auto;
+
+	&::after {
+		content: "";
+		height: 5px;
+		width: 30%;
+		@apply bg-primary;
+		@apply absolute;
+		left: 35%;
+		bottom: -10px;
+	}
+}
+
+.underlinedHeader {
+	@apply font-bold;
+	@apply relative;
+
+	&::after {
+		content: "";
+		height: 2px;
+		width: 25%;
+		@apply bg-primary;
+		@apply absolute;
+		left: 0;
+		bottom: -5px;
+	}
+}
+
+.paragraph {
+	@apply text-grey3;
+	@apply mt-6;
+}
